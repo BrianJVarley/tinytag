@@ -1,12 +1,15 @@
 {
 	"private": true,
 	"name": "tinytag",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "A set of useful template literal tag functions",
 	"repository": "brianjvarley/tinytag",
 	"author": "Brian Varley <brianvarley9@gmail.com>",
 	"license": "MIT",
-	"keywords": [ "template literal tag", "literal tag functions" ],
+	"keywords": [
+		"template literal tag",
+		"literal tag functions"
+	],
 	"main": "index.js",
 	"jsnext:main": "index.es.js",
 	"scripts": {
@@ -20,10 +23,16 @@
 		"prepublish": "npm run build",
 		"start": "easystatic start docs"
 	},
-	"files": [ "dist/**/*" ],
+	"files": [
+		"dist/**/*"
+	],
 	"babel": {
-		"presets": [ "@babel/preset-env" ],
-		"plugins": [ "@babel/plugin-transform-runtime" ]
+		"presets": [
+			"@babel/preset-env"
+		],
+		"plugins": [
+			"@babel/plugin-transform-runtime"
+		]
 	},
 	"eslintConfig": {
 		"parser": "babel-eslint",
