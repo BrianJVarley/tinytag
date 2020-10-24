@@ -19,7 +19,7 @@
 		"test:cover": "nyc npm test",
 		"coveralls": "cat ./coverage/lcov.info | coveralls",
 		"build": "node tools/build",
-		"publish:prod": "cd ./dist && npm publish",
+		"publish:prod": "npm run build && cd ./dist && npm publish",
 		"prepublish": "npm run build",
 		"start": "easystatic start docs"
 	},
