@@ -6,7 +6,7 @@
 	"repository": "brianjvarley/tinytag",
 	"author": "Brian Varley <brianvarley9@gmail.com>",
 	"license": "MIT",
-	"keywords": [],
+	"keywords": [ "template literal tag", "literal tag functions" ],
 	"main": "index.js",
 	"jsnext:main": "index.es.js",
 	"scripts": {
@@ -16,9 +16,11 @@
 		"test:cover": "nyc npm test",
 		"coveralls": "cat ./coverage/lcov.info | coveralls",
 		"build": "node tools/build",
+		"publish:prod": "cd ./dist && npm publish",
 		"prepublish": "npm run build",
 		"start": "easystatic start docs"
 	},
+	"files": [ "dist/**/*" ],
 	"babel": {
 		"presets": [ "@babel/preset-env" ],
 		"plugins": [ "@babel/plugin-transform-runtime" ]
