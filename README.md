@@ -29,7 +29,7 @@ import { methodName } from 'tinytag'
 Methods
 -------
 
-### - highLightTag`A string with ${var1} and ${var2} to be highlighted`
+### - highLightTag
 
 Wraps each template variable in string literal with `<span class=highlight> <span>`
 to highlight variables in string.
