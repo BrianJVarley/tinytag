@@ -7,8 +7,7 @@
 	"author": "Brian Varley <brianvarley9@gmail.com>",
 	"license": "MIT",
 	"keywords": [
-		"template literal tag",
-		"literal tag functions"
+		"template literal tag"
 	],
 	"main": "index.js",
 	"jsnext:main": "index.es.js",
