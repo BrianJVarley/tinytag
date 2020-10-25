@@ -19,7 +19,7 @@
 		"test:cover": "nyc npm test",
 		"coveralls": "cat ./coverage/lcov.info | coveralls",
 		"build": "node tools/build",
-		"preparepublish": "npm run build && npm version minor",
+		"preparepublish": "npm version minor && npm run build",
 		"publish:prod": "npm run preparepublish && cd ./dist && npm publish",
 		"version": "auto-changelog -p && git add CHANGELOG.md"
 	},
