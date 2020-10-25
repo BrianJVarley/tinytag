@@ -14,11 +14,30 @@ npm i --save tinytag
 
 ## Usage
 
-TODO
-
 ```JavaScript
 
+// Node.js
+const tinyTag = require('tinytag');
 
+// Browser
+import tinyTag from 'tinytag';
+// or 
+import { methodName } from 'tinytag'
+
+```
+
+Methods
+-------
+
+### - highLightTag`A string with ${var1} and ${var2} to be highlighted`
+
+Wraps each template variable in string literal with `<span class=highlight> <span>`
+to highlight variables in string.
+
+Example:
+
+```javascript
+highLightTag`Current account balance ${100000} no ${'overdraft'}` // => 'Current account balance <span class=highlight> 1000000 <span> no <span class=highlight> overdraft <span>'
 ```
 
 ## Changelog
