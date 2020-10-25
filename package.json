@@ -20,8 +20,8 @@
 		"coveralls": "cat ./coverage/lcov.info | coveralls",
 		"build": "node tools/build",
 		"publish:prod": "npm run build && cd ./dist && npm publish",
-		"prepublish": "npm run build",
-		"start": "easystatic start docs"
+		"prepublish": "npm run build ** npm version minor",
+		"version": "auto-changelog -p && git add CHANGELOG.md"
 	},
 	"files": [
 		"dist/**/*"
@@ -48,6 +48,7 @@
 		"@babel/plugin-transform-runtime": "^7.0.0",
 		"@babel/preset-env": "^7.0.0",
 		"@babel/register": "^7.0.0",
+		"auto-changelog": "^2.2.1",
 		"babel-eslint": "^10.0.1",
 		"chai": "^4.2.0",
 		"coveralls": "^2.11.14",
